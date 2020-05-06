@@ -1,0 +1,68 @@
+const productAttribute = [
+    {
+        id: 1,
+        attribute_id: 1,
+        product_id: 1,
+        value: ["M", "L", "S"],
+        created_at: "2015/05/01",
+        updated_at: "2015/05/02",
+    },
+    {
+        id: 2,
+        attribute_id: 2,
+        product_id: 1,
+        value: ["Blue", "Green", "Yellow"],
+        created_at: "2015/05/01",
+        updated_at: "2015/05/02",
+    },
+    {
+        id: 3,
+        attribute_id: 1,
+        product_id: 2,
+        value: ["M", "S"],
+        created_at: "2015/05/01",
+        updated_at: "2015/05/02",
+    },
+    {
+        id: 4,
+        attribute_id: 2,
+        product_id: 2,
+        value: ["Black", "Pink", "Blue"],
+        created_at: "2015/05/01",
+        updated_at: "2015/05/02",
+    },
+    {
+        id: 5,
+        attribute_id: 1,
+        product_id: 3,
+        value: ["M", "XL", "S"],
+        created_at: "2015/05/01",
+        updated_at: "2015/05/02",
+    },
+    {
+        id: 6,
+        attribute_id: 2,
+        product_id: 3,
+        value: ["Blue"],
+        created_at: "2015/05/01",
+        updated_at: "2015/05/02",
+    },
+    {
+        id: 7,
+        attribute_id: 1,
+        product_id: 4,
+        value: ["M", "L"],
+        created_at: "2015/05/01",
+        updated_at: "2015/05/02",
+    },
+    {
+        id: 8,
+        attribute_id: 2,
+        product_id: 4,
+        value: ["Green"],
+        created_at: "2015/05/01",
+        updated_at: "2015/05/02",
+    },
+];
+
+export default productAttribute;

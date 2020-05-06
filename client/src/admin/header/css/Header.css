@@ -1,0 +1,34 @@
+.header span {
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.header button:hover {
+    background-color: none;
+    border: none;
+}
+.header .search {
+    width: 100% !important;
+    margin: 0;
+}
+.header .search input {
+    height: 64px;
+}
+.header .search button {
+    height: 64px;
+}
+.header .button-search {
+    margin-left: 15px;
+}
+.header .nav-bar {
+    display: inline-block;
+    float: right;
+    margin-right: 20px;
+}
+.header .nav-bar .icon {
+    font-size: 21px;
+    margin-left: 17px;
+    margin-right: 17px;
+    color: rgba(255, 255, 255, 0.8);
+}

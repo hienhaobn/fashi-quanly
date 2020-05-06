@@ -1,0 +1,15 @@
+.edit-table-tag-group .site-tag-plus {
+    margin-top: 8px;
+    background: #fff;
+    border-style: dashed;
+}
+.edit-table-tag-group .edit-tag {
+    user-select: none;
+    margin-top: 8px;
+}
+.edit-table-tag-group .tag-input {
+    width: 78px;
+    margin-right: 8px;
+    vertical-align: top;
+    margin-top: 8px
+}

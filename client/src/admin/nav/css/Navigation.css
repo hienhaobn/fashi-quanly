@@ -1,0 +1,18 @@
+.navigation .logo {
+    height: 60px !important;
+    margin-bottom: 4px !important;
+    padding-left: 24px;
+    display: flex;
+    align-items: center;
+}
+.navigation .logo .icon {
+    font-size: 40px;
+    color: rebeccapurple;
+}
+.navigation .logo .title {
+    font-size: 27px;
+    font-weight: 900;
+    margin-left: 10px;
+    color: blueviolet;
+    letter-spacing: 1px;
+}

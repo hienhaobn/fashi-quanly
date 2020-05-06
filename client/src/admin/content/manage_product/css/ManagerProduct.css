@@ -1,0 +1,55 @@
+.manager-product .head {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 700;
+}
+.manager-product .create-product {
+    border: none;
+    margin-left: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.manager-product .operation-managerment a {
+    cursor: pointer;
+}
+.manager-product .main-content>div>div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.manager-product .main-content .content p {
+    margin: 0;
+}
+.manager-product .main-content .content span {
+    font-weight: bold;
+}
+.manager-product .main-content .content p:first-child {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.manager-product .main-content .product-item {
+    position: relative;
+}
+.manager-product .main-content .product-item:hover .action {
+    top: 230px;
+}
+.manager-product .main-content .product-item .action {
+    position: absolute;
+    top: 310px;
+    transition: all;
+    transition-duration: 0.5s;
+}
+.manager-product .main-content .product-item .content {
+    z-index: 1000;
+    position: relative;
+    background: #f0f2f5;
+}
+.manager-product .main-content .product-item .action .icon {
+    font-size: 30px;
+    display: block;
+    margin-bottom: 7px;
+    margin-left: 10px;
+}
+.manager-product .main-content .product-item .action .icon:hover {
+    color: #0999ff;
+}
