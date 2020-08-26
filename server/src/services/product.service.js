@@ -12,11 +12,6 @@ module.exports = {
       // return dataProducts
     }
     return Validate.validateGetDataFormDatabase();
-    // let data = [];
-    // await Promise.all(dataProducts.map( product => {
-    //   data.push(product._id)
-    // }));
-    // return data;
   },
   'getDetailProduct': async (productId) => {
     const dataProduct = await ProductRepository.findProductBuyId(productId);

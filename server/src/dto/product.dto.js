@@ -2,22 +2,6 @@ const isArray = require('isarray');
 const ProductConstant = require('../constants/db.constant');
 module.exports = {
   'mapEntityToDto': (data) => {
-    // // let dataProduct = {...data};
-    // let result = JSON.parse(JSON.stringify(data, (key, value) => {
-    //   if(key === "prices") {
-    //     return undefined;
-    //   }
-    //   return value;
-    // }));
-
-    // // if(!!dataProduct._doc.prices && !!dataProduct._doc.prices.length) {
-    // //   result = {...result, ...dataProduct._doc.prices[0]}
-    // //   console.log('-------',result);
-    // // } 
-    // if(data.prices && data.prices.length) {
-    //   result = {...result, ...data.prices[0]}
-    // }
-    // return result;
     let product = {
       _id: String,
       product_name: String,
