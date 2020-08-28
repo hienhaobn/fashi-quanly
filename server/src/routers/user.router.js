@@ -7,7 +7,9 @@ const path = '/user';
 
 UserRouter.get(path, UserController.getUsersController)
           .post(path, UserController.postUserController)
-          .delete(path, UserController.deleteUserController)
-          .put(path, UserController.editUserController);
+          .delete('/user/:id', UserController.deleteUserController)
+          .put(path, UserController.editUserController)
+          .post('/user/:id', UserController.createUserController);
+          
 
 module.exports = UserRouter;

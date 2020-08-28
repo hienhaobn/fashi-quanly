@@ -10,6 +10,9 @@ module.exports = {
   //  }));
     return dataUser;
   },
+  // 'getUserService': async () => {
+  //   return 
+  // },
   'postUserService': async (data) => {
     if(data) {
       let dataSave = await UserRepository.createUserRepository(data.title);
@@ -17,12 +20,25 @@ module.exports = {
     }
     return 'error save by service'
   },
-  'deleteUserService': async (id) => {
-    const statusDelete = await userRepository.deleteUserRepository(id);
-    statusDelete ? 'Delete success' : 'delete fail';
+  'deleteUserService': async (id, idChild) => {
+    if(id && idChild) {
+      console.log('this is delete service---------');
+      const statusDelete = await userRepository.deleteUserChildRepository(id, idChild);
+      statusDelete ? 'Delete success' : 'delete fail';
+    } else {
+      const statusDelete = await userRepository.deleteUserRepository(id);
+      statusDelete ? 'Delete success' : 'delete fail';
+    }
+    
   },
   'edituserService': async (id, data) => {
     const statusEdit = await userRepository.editUserRepository(id, data);
     statusEdit ? 'edit todo success' : 'edit fail';
+  },
+  'createUserChildService': async (id, data) => {
+    const statusAddChild = await userRepository.createUserChildRepository(id, data);
+    console.log('log service: ', statusAddChild);
+    statusAddChild ? 'create todo child success service' : 'add child fail service';
+    return statusAddChild;
   }
 }

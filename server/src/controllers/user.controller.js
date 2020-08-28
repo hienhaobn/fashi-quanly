@@ -24,13 +24,33 @@ module.exports = {
   },
   'deleteUserController': async (req, resp) => {
     // if(req.param) return resp.status(200).json('Error get data from client');
-    console.log('param id: ', req.query.id);
-    const id = req.query.id;
-    if(id){
+    console.log('param id: ', req.params);
+    console.log('param child: ', req.body);
+    const {id} = req.params;
+    const {idChild} = req.body
+    if(!id && !idChild) return resp.status(400).json('Error get data from client');
+    if(id && idChild){
+      console.log('This is user controller----');
+      await UserService.deleteUserService(id, idChild);
+      return resp.status(200).json('delete success');
+    } else {
       await UserService.deleteUserService(id);
       return resp.status(200).json('delete success');
     }
-      
-    return resp.status(400).json('Error get data from client');
+    
+  },
+  'createUserController': async (req, resp) => {
+    console.log('console log create user: ', req.body);
+    const {title} = req.body;
+    const {id} = req.params;
+    if(id && title) {
+      const dataSave = await UserService.createUserChildService(id, title);
+      console.log('Data save: ',dataSave);
+      if(dataSave) 
+        return resp.status(200).json('add user child success');
+      return resp.status(400).json('Error add user child controller');
+    }
+
+    // return resp.status(400).json('Error get data from client');
   }
 }
