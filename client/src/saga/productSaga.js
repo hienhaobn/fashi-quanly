@@ -10,7 +10,7 @@ import data from '../reducer/data.fake/product';
 function* getListProduct(action) {
     // const products = data;
     const products = yield axios.get(`${domain}/product`).then(res => res.data).catch(err => console.log(err));
-    yield put({type: actionType.GET_PRODUCTS_SUCCESS, products});
+    yield put({type: actionType.GET_PRODUCTS_SUCCESS, odo});
 }
 
 export function* getListProductWatcher() {
